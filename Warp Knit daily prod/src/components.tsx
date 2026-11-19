@@ -28,7 +28,7 @@ export function Shell({children, role, setRole, onSignOut, userEmail}: {children
     <main className="main-area">
       <header className="topbar"><div><span className="eyebrow">PRODUCTION MANAGEMENT</span><h2>Warp Knitting Report</h2></div><div className="top-actions"><span className="online-dot"/> <span className="muted">{userEmail??"Reporting workspace"}</span><div className="avatar">{role==="admin"?"A":role==="boss"?"B":"U"}</div><button className="btn btn-secondary btn-small sign-out-btn" onClick={onSignOut}><LogOut size={15}/> Sign Out</button></div></header>
       <div className="page-content">{children}</div>
-      <footer className="footer">Warp Knitting Daily Production Report <span>Internal reporting application</span></footer>
+      <footer className="footer">DEVELOPED BY MD ASHIQ SHAHARIAR <span>Internal reporting application</span></footer>
     </main>
   </div>;
 }
